@@ -1,0 +1,245 @@
+! Expires: 2 Days (Update Frequency)
+! Last Modified: 01:01 PM 2019-01-13
+! Title: Condensed Gmail
+! Homepage: https://github.com/yourduskquibbles/condensegmail
+! Discord: https://discord.me/yourduskquibbles
+! Purpose: Condense the Display Density of the 2018 Gmail Redesign - Unsuck the web and make it more user friendly!
+! Works best with uBlock Origin or Nano Adblocker - be sure to install it as well!
+
+
+! Condensed Gmail Testing Start
+! gmail header - set padding
+! mail.google.com##.gb_Wa:not(.gb_Xa) .gb_Sd:style(padding: 2px !important;)
+mail.google.com##.gb_Wa:not(.gb_Xa) .gb_Xd:style(padding: 2px !important;)
+
+! gmail header - logo & hamburger box size
+mail.google.com##[style^="min-width: 248px;"]:style(min-width: 10% !important; max-width: 20% !important; padding-right: 2% !important;)
+
+! gmail header - logo
+mail.google.com##[title^="Gmail"]:style(height: 44px !important; margin: 0 !important;)
+! gmail header - hamburger button - set padding
+mail.google.com##[aria-label^="Main menu"]:style(margin: 0 !important; padding: 8px !important;)
+
+! gmail header - search bar - These class names change
+! mail.google.com##.gb_Mc:style(height: 40px !important;)
+mail.google.com##.gb_Pc:style(height: 40px !important;)
+! mail.google.com##.gb_6e:style(height: 36px !important; max-width: 100% !important; border: 1px solid rgba(0,0,0,.12) !important; background-color: #fff !important;)
+! search mail outlined box
+mail.google.com###aso_search_form_anchor:style(height: 36px !important; max-width: 100% !important; border: 1px solid rgba(0,0,0,.12) !important; background-color: #fff !important;)
+! mail.google.com##.gb_Jf:style(height: 38px !important;)
+! mail.google.com##.gb_Nf:style(height: 38px !important;)
+mail.google.com##[gh^="sb"]:style(height: 38px !important;)
+! mail.google.com##.gb_6d:style(height: 40px !important;)
+
+
+! search mail box alignment
+! mail.google.com##.gb_be:style(height: 40px !important;)
+! mail.google.com##.gb_sf:style(height: 38px !important;)
+! mail.google.com##.gb_wf:style(height: 38px !important;)
+mail.google.com##[aria-label^="Search mail"]:style(height: 38px !important;)
+
+
+! search magnifying glass
+mail.google.com##[aria-label^="Search Mail"] > svg:style(padding: 2px !important; margin: 5px !important;)
+
+! gmail header - search bar drop down chevron (always display)
+mail.google.com##[aria-label^="Advanced search options"]:style(display: block !important; height: 34px !important;)
+mail.google.com##[aria-label^="Advanced search options"] > svg:style(padding: 2px !important; margin: 5px !important;)
+
+! gmail header - search close button
+mail.google.com##[aria-label^="Clear search"]:style(height: 34px !important;)
+mail.google.com##[aria-label^="Clear search"] > svg:style(padding: 2px !important; margin: 5px !important;)
+
+! gmail header - advanced search panel (opens after clicking search bar drop down chevron)
+mail.google.com##.ZF-Av:style(left: 54% !important;)
+
+! gmail header - google apps | google notifications | google account user icon 
+
+mail.google.com##[data-ogsr-up^=""]:style(padding-left: 0 !important;)
+! mail.google.com##.gb_Nc.gb_ke:style(padding-left: 0 !important;)
+mail.google.com##.gb_id:style(padding: 0 !important;)
+
+! gmail subheader ribbon - "back to" nav | mail actions | count | mail navigation (newer message | older message) | gmail settings)
+mail.google.com##.G-atb:style(height: 44px !important;)
+
+! gmail left sidebar: set minimum width so border-radius on label background works properly
+mail.google.com##.wT:style(min-width: 1px !important;)
+
+! gmail left sidebar: compose button box
+mail.google.com##.aic:style(height: 44px !important;)
+
+! gmail left sidebar: compose button 
+mail.google.com##.z0:style(height: 20px !important; margin: 12px !important; padding-left: 0 !important;)
+mail.google.com##.L3.T-I-KE.J-J5-Ji.T-I:style(height: 30px !important; flex: 1 0 1 !important;)
+mail.google.com:##.z0 > .L3:style(font-size: 1.05rem !important; letter-spacing: .2px !important; color: #484954 !important;)
+
+! after clicking hamburger - fix condensed left sidebar icons 
+mail.google.com##.bhZ:not(.bym) .TK .TO, .bhZ:not(.bym) .n6 .ah9, .bhZ:not(.bym) .CL:style(margin-left: 0 !important; width: 48px !important;)
+
+! gmail left sidebar: (inbox/mail folders/tagged categories) 
+mail.google.com##.aeN:style(min-width: 0 !important;)
+mail.google.com##.aeN.nn.oy8Mbf.nH:style(min-width: 10% !important; max-width: 20% !important;)
+
+! gmail left sidebar: horizontal/vertical scroll bar (if needed)
+mail.google.com##.ajl:style(overflow-x: hidden !important; overflow-y: auto !important;)
+
+! gmail left sidebar: folder labels 
+mail.google.com##.nU:style(margin-right: 0 !important;)
+mail.google.com##.TN:style(height: 22.5px !important; padding: 0 0 0 10px !important;)
+mail.google.com##.TN > .aio:style(line-height: 22.5px !important;)
+
+! gmail left sidebar: More expand label alignment
+mail.google.com##.n4:style(padding: 0 0 0 10px !important;)
+mail.google.com##.n4 .G-asx:style(margin: 0 !important;)
+
+! gmail left sidebar: manage | create labels alignment
+mail.google.com##.CL:style(padding: 0 0 0 10px !important;)
+
+! gmail left sidebar: label collapsed chevron location
+mail.google.com##.TH.aii.J-J5-Ji:style(width: 10px !important; margin-left: -8px !important;)
+
+! gmail left sidebar fake the size of the chevron icon for label with no dependents
+mail.google.com##.TH.J-J5-Ji:style(width: 10px !important; margin-left: -8px !important;)
+
+! gmail left sidebar: label expanded chevron location
+mail.google.com##.TO > .TN.aY7xie.NEehkc.aHS-bnr > .TH.aih.J-J5-Ji:style(width: 10px !important; margin-left: -8px !important;)
+
+! left sidebar folder label alignment
+mail.google.com##.ain.aim:style(height: 22.5px !important;)
+
+! left sidebar folder icon alignment
+mail.google.com##.qj:style(height: 22.5px !important;)
+
+! gmail left sidebar: folder category icons
+mail.google.com##.qj:style(margin-right: 4px !important; background-size: .875rem !important;)
+
+! gmail left sidebar: unread item count
+mail.google.com##.bsU:style(display: block !important; padding-right: 5px !important;)
+
+! gmail left sidebar: label hover hamburger - always display
+! mail.google.com##.pM.aj0:style(display: flex !important;)
+
+! gmail left sidebar: label settings stop hover
+mail.google.com##.aj0:style(position: static !important; height: 14.5px !important; visibility: visible !important; margin-left: 0 !important;)
+
+! gmail - inbox set inbox items row height 
+mail.google.com##.zA:style(height: 20.5px !important; padding: 1px 0 !important;)
+
+! gmail - inbox message left border color indicator  
+mail.google.com##.zA > .PF:before:style(display: block !important;)
+
+! gmail - inbox check box size and alignment
+mail.google.com##.T-Jo:after:style(height: 20px !important; width: 20px !important; top: 0 !important; left: 0 !important; padding: 0 10px 0 10px !important;)
+mail.google.com##.xY.oZ-x3:style(padding: 0 10px 0 10px !important;)
+
+! gmail - inbox remove hover effect on mail 
+mail.google.com##.zA:hover:style(box-shadow: inset 0 -1px 0 0 rgba(100,121,143,.122) !important;)
+
+! gmail - inbox remove hover mailbox toolbar (archive | delete | mark read | snooze)
+mail.google.com##.bqY
+
+! gmail - message label size / alignment 
+mail.google.com##.ar.as:style(line-height: 20px !important;)
+
+! gmail - inbox sender name
+mail.google.com##.xY.yX:style(flex-bases: 168px !important; max-width: 168px !important; padding-right: 0px !important;)
+
+! gmail message preview trailing text (clip or elipsis?)
+mail.google.com##.y2:style(text-overflow: clip !important;)
+
+! gmail - inbox space between message preview and time - also contains attachment and calendar icon (default gmail setting removes this element on message thread hover, this removes the annoying flicker behavior)
+mail.google.com##.zA > .yf:style(display: flex !important;)
+
+! always show quick action buttons in email list
+mail.google.com##.aKS:style(display: flex !important;)
+
+! always show date/time on message in inbox and move closer to scroll bar
+mail.google.com##.zA > .xW:style(display: block !important; padding-right: 8px !important;)
+mail.google.com##.zA > .xW.xY:style(flex-basis: 48px !important; max-width: 48px !important; letter-spacing: .2px !important;)
+
+! gmail inbox footer account details 
+mail.google.com##.aeG:style(display: block !important;)
+
+! gmail message thread - make `to` line more condensed
+mail.google.com##.hb:style(font-size: .7rem !important; line-height: 12.5px !important; letter-spacing: .2px !important;)
+
+! gmail message thread - make semi-expanded sender information smaller
+mail.google.com##.ady:style(line-height: 16px !important;)
+
+! gmail message thread - subject heading
+mail.google.com##.byY.V8djrc.nH:style(padding: 5px 0 0px 16px !important;)
+
+! gmail message thread - quoted reply block
+mail.google.com##blockquote:style(margin-block-start: 0.5em !important; margin-block-end: 0.5em !important; background-color: #fff !important; color: #000 !important; font-style: italic !important;)
+
+! gmail message thread - always show expanded footer block - can be important info google makes blind
+! not working properly see email from john
+mail.google.com##.h5, .adL,  .adL > p:style(display: flex !important;)
+
+! mail.google.com##.adL.HOEnZb:style(display: flex !important;)
+! mail.google.com##.im > p:style(display: flex !important;)
+
+! gmail message thread - increase paragraph density
+mail.google.com##p:style(margin-block-start: 0 !important; margin-block-end: 0 !important;)
+
+! gmail message thread - reduce margin on semi-expanded messages
+mail.google.com##.ii:style(margin: 0 !important;)
+
+! gmail message thread - increase density after message end
+mail.google.com##.gs:style(padding: 0 !important;)
+
+! gmail message thread - expand message thread dots
+mail.google.com##.ajU:style(padding: 5px 0 !important; margin: 0 !important;)
+mail.google.com##[aria-label^="Show trimmed content"]
+
+! gmail message thread - semi-collapsed email container
+mail.google.com##.kv:style(padding-bottom: 2px !important;)
+
+! gmail message thread - sender info: increase density
+mail.google.com##.gE:style(padding: 5px 0 0 0 !important;)
+
+! gmail message thread - sender icon - increase density and line up with sender info filter above
+mail.google.com##.aju:style(height: auto !important; align-items: flex-start !important; padding: 5px 16px 0 16px !important;)
+
+! gmail message thread - footer button: remove change format on hover
+!ublock says this doesn't work, dont have time to test right now
+! mail.google.com##.ajU.yj6qo:mouseover
+
+! gmail message thread - make footer text smaller and more condensed
+mail.google.com##p[style^="font-size:small;color:#666"]:style(font-size: smaller !important; line-height: 12.5px !important; margin-block-end: .75em !important; color: #6666 !important;)
+
+! gmail message thread - footer link color
+mail.google.com##p[style^="font-size:small;color:#666"] > [href]:style(color: #91b1ea !important;)
+
+! gmail message thread - make footer align closer to message body
+mail.google.com##.adm:style(margin: 0 !important;)
+
+! hangouts chat - line up hangouts friend list scroll bar with folder scroll bar (who designed this garbage at google?)
+mail.google.com##.aeN .s:style(margin-right: 0 !important;)
+
+! hangouts chat - line up left side of hangouts friend list with inbox alignment
+mail.google.com##.aj3.pp.aND.T0:style(margin-left: 15px !important;)
+
+! hangouts chat - condense profile name / new chat window
+hangouts.google.com##.jr:style(padding: 0 !important; margin-bottom: 4px !important;)
+hangouts.google.com##.Yo > button.z-b-G.fTj9AbL:style(height: 28px !important; width: 28px !important;)
+
+! hangouts chat - condensed contact list
+hangouts.google.com##.GmEQI .HfhnEf:style(height: 18px !important; padding: 0 10px 0 1px !important;)
+
+! hangouts chat - contact online status indicator
+hangouts.google.com##.GmEQI .mkIVzd > .kQYfzd:style(top: 2.5px !important;)
+
+! hangouts chat - contact
+hangouts.google.com##.rcAgGd:style(height: 18px !important;)
+hangouts.google.com##.rcAgGd:hover:style(height: 18px !important;)
+hangouts.google.com##.GmEQI .mkIVzd:style(height: 18px !important; padding: 0 7px !important;)
+hangouts.google.com##.rkWcre:style(padding-top: 0 !important;)
+
+! hangouts chat - contact display name box size
+hangouts.google.com##.qCUW5d:style(height: 18px !important;)
+
+! hangouts chat - contact hover hamburger menu
+hangouts.google.com##.uOlSBc:hover:style(height: 18px !important; width: 17px !important;)
+
+! Condensed Gmail Testing End
