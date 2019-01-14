@@ -1,5 +1,5 @@
 ! Expires: 2 Days (Update Frequency)
-! Last Modified: 01:01 PM 2019-01-13
+! Last Modified: 03:35 PM 2019-01-14
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
 ! Discord: https://discord.me/yourduskquibbles
@@ -180,7 +180,8 @@ mail.google.com##.h5, .adL,  .adL > p:style(display: flex !important;)
 ! mail.google.com##.im > p:style(display: flex !important;)
 
 ! gmail message thread - increase paragraph density
-mail.google.com##p:style(margin-block-start: 0 !important; margin-block-end: 0 !important;)
+! 03:34 PM 2019-01-14 - breaks formatted table data
+! mail.google.com##p:style(margin-block-start: 0 !important; margin-block-end: 0 !important;)
 
 ! gmail message thread - reduce margin on semi-expanded messages
 mail.google.com##.ii:style(margin: 0 !important;)
