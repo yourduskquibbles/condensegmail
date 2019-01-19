@@ -1,8 +1,9 @@
 ! Expires: 2 Days (Update Frequency)
-! Last Modified: 03:35 PM 2019-01-14
+! Last Modified: 01:36 PM 2019-01-19
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
 ! Discord: https://discord.me/yourduskquibbles
+! License: https://creativecommons.org/licenses/by-sa/4.0
 ! Purpose: Condense the Display Density of the 2018 Gmail Redesign - Unsuck the web and make it more user friendly!
 ! Works best with uBlock Origin or Nano Adblocker - be sure to install it as well!
 
