@@ -1,5 +1,5 @@
 ! Expires: 2 Days (Update Frequency)
-! Last Modified: 01:36 PM 2019-01-19
+! Last Modified: 01:22 PM 2019-01-26
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
 ! Discord: https://discord.me/yourduskquibbles
@@ -23,8 +23,14 @@ mail.google.com##[title^="Gmail"]:style(height: 44px !important; margin: 0 !impo
 mail.google.com##[aria-label^="Main menu"]:style(margin: 0 !important; padding: 8px !important;)
 
 ! gmail header - search bar - These class names change
+! will replace with when implemented in uBO
+! mail.google.com##header > div > div > div:has([id="aso_search_form_anchor"]):style(height: 40px !important;)
+
 ! mail.google.com##.gb_Mc:style(height: 40px !important;)
-mail.google.com##.gb_Pc:style(height: 40px !important;)
+! mail.google.com##.gb_Pc:style(height: 40px !important;)
+mail.google.com##.gb_je:style(height: 40px !important;)
+
+
 ! mail.google.com##.gb_6e:style(height: 36px !important; max-width: 100% !important; border: 1px solid rgba(0,0,0,.12) !important; background-color: #fff !important;)
 ! search mail outlined box
 mail.google.com###aso_search_form_anchor:style(height: 36px !important; max-width: 100% !important; border: 1px solid rgba(0,0,0,.12) !important; background-color: #fff !important;)
