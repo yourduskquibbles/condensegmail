@@ -1,5 +1,5 @@
 ! Expires: 2 Days (Update Frequency)
-! Last Modified: 19:09 2019-06-19
+! Last Modified: 09:16 2019-06-27
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
 ! Discord: https://discord.me/yourduskquibbles
@@ -34,10 +34,9 @@ mail.google.com##[gh^="sb"]:style(height: 38px !important;)
 
 ! search mail box alignment
 mail.google.com##[aria-label^="Search mail"]:style(position: relative !important; padding: 0 !important; height: 38px !important;)
-mail.google.com##.gb_Qe:not(.gb_8e):style(padding: 0 !important;)
 
-! search mail box alignment 2019-06-19 Update
-mail.google.com##.gb_We:not(.gb_ef):style(padding: 0 !important;)
+! search mail box alignment 2019-06-27 Update
+mail.google.com##.gsib_a:style(padding: 0 !important;)
 
 ! search mail autocomplete box sizing
 mail.google.com##input[autocomplete="off"]:style(height: 38px !important;)
