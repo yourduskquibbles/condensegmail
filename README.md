@@ -4,6 +4,4 @@
 
 ## One Click Installation
 
-Click the following: [Add `Condense Gmail` Filter List to Custom uBlock Origin Filters](https://subscribe.adblockplus.org?location=https%3A%2F%2Fgithub.com%2Fyourduskquibbles%2Fcondensegmail%2Fblob%2Fmaster%2Ffilters%2Fcondensegmail.txt&amp;title=Condense%20Gmail)
-
-
+Click: [One-Click Installation](https://subscribe.adblockplus.org/?location=https://raw.githubusercontent.com/yourduskquibbles/condensegmail/master/filters/condensegmail.txt&title=Condense%20Gmail)
