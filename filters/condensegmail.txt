@@ -1,5 +1,5 @@
 ! Expires: 7 Days (Update Frequency)
-! Last Modified: 20:42 2020-05-26
+! Last Modified: 22:18 2020-05-26
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
 ! Discord: https://discord.me/yourduskquibbles
@@ -251,12 +251,11 @@ mail.google.com##.nH.aqK:style(height: 36px !important;)
 ! mail action buttons - Added/updated 2020-05-26
 mail.google.com##.G-tF:style(height: 34px !important;)
 mail.google.com##.PY.G-atb.E.D > .aqK.nH > .aqL.Cq, .bzn:style(display: flex !important;)
-mail.google.com##.bzn:not(.iH) > .G-tF > .G-Ni > .T-I:style(margin-left: 2px !important; margin-right: 2px !important;)
+mail.google.com##.D.E.G-atb.PY .bzn:not(.iH) > .G-tF > .G-Ni > .T-I:style(margin-left: 2px !important; margin-right: 2px !important;)
 mail.google.com##.G-Ni.G-aE:not(:first-child):style(margin-right: 1px !important;)
 
 ! mail action bar - mail actions (read/delete/etc.) - Added/updated 2020-05-26
 mail.google.com##.Cq.aqL, .bzn .G-Ni:style(height: 34px !important; margin-top: 2px !important;)
-mail.google.com##.bzn .G-Ni:style(margin-left: 0 !important; padding-right: 1px !important;)
 
 ! action buttons within an email
 mail.google.com##.iH.bzn:style(height: 34px !important;)
