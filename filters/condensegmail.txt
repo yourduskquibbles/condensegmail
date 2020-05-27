@@ -1,5 +1,5 @@
 ! Expires: 7 Days (Update Frequency)
-! Last Modified: 15:20 2020-05-02
+! Last Modified: 20:39 2020-05-26
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
 ! Discord: https://discord.me/yourduskquibbles
@@ -29,28 +29,28 @@ mail.google.com##[aria-label^="Main menu"]:style(margin: 0 !important; padding: 
 ! mail.google.com##header > div > div > div:has([id="aso_search_form_anchor"]):style(height: 40px !important;)
 mail.google.com##.gb_je:style(height: 40px !important;)
 
-! search mail outlined box
-mail.google.com###aso_search_form_anchor:style(height: 36px !important; max-width: 100% !important; border: 1px solid rgba(0,0,0,.12) !important; background-color: #fff !important;)
-mail.google.com##[gh^="sb"]:style(height: 38px !important;)
+! search mail outlined box - updated 2020-05-26
+mail.google.com###aso_search_form_anchor:style(height: 46px !important; max-width: 100% !important; border: 1px solid rgba(0,0,0,.12) !important; background-color: #fff !important;)
+mail.google.com##[gh^="sb"]:style(height: 48px !important;)
 
-! search mail box alignment
-mail.google.com##[aria-label^="Search mail"]:style(position: relative !important; padding: 0 !important; height: 38px !important;)
+! search mail box alignment - updated 2020-05-26
+mail.google.com##[aria-label^="Search mail"]:style(position: relative !important; padding: 0 !important; height: 48px !important;)
 
 ! search mail box alignment 2019-06-27 Update
 mail.google.com##.gsib_a:style(padding: 0 !important;)
 
-! search mail autocomplete box sizing
-mail.google.com##input[autocomplete="off"]:style(height: 38px !important;)
+! search mail autocomplete box sizing - updated 2020-05-26
+mail.google.com##input[autocomplete="off"]:style(height: 48px !important;)
 
-! search magnifying glass
-mail.google.com##[aria-label^="Search Mail"] > svg:style(padding: 2px !important; margin: 5px !important;)
+! search magnifying glass - updated 2020-05-26
+mail.google.com##[aria-label^="Search Mail"] > svg:style(padding: 2px !important; margin: 10px 5px !important;)
 
-! gmail header - search bar drop down chevron (always display)
-mail.google.com##[aria-label^="Advanced search options"]:style(display: block !important; height: 34px !important;)
+! gmail header - search bar drop down chevron (always display) - updated 2020-05-26
+mail.google.com##[aria-label^="Advanced search options"]:style(display: block !important; height: 44px !important;)
 mail.google.com##[aria-label^="Advanced search options"] > svg:style(padding: 2px !important; margin: 5px !important;)
 
-! gmail header - search close button
-mail.google.com##[aria-label^="Clear search"]:style(height: 34px !important;)
+! gmail header - search close button - updated 2020-05-26
+mail.google.com##[aria-label^="Clear search"]:style(height: 44px !important;)
 mail.google.com##[aria-label^="Clear search"] > svg:style(padding: 2px !important; margin: 5px !important;)
 
 ! gmail header - advanced search panel (opens after clicking search bar drop down chevron)
@@ -61,7 +61,7 @@ mail.google.com##[data-ogsr-up^=""]:style(padding-left: 0 !important;)
 mail.google.com##.gb_id:style(padding: 0 !important;)
 
 ! gmail subheader ribbon - "back to" nav | mail actions | count | mail navigation (newer message | older message) | gmail settings)
-mail.google.com##.G-atb:style(height: 44px !important;)
+mail.google.com##.G-atb:style(height: 40px !important;)
 
 ! gmail left sidebar: set minimum width so border-radius on label background works properly
 mail.google.com##.wT:style(min-width: 1px !important;)
@@ -240,5 +240,54 @@ hangouts.google.com##.qCUW5d:style(height: 18px !important;)
 
 ! hangouts chat - contact hover hamburger menu
 hangouts.google.com##.uOlSBc:hover:style(height: 18px !important; width: 17px !important;)
+
+! mail action/settings bar - Added/updated 2020-05-26
+mail.google.com##.PY.G-atb.E.D:style(padding: 0 4px 0 16px !important;)
+mail.google.com##.G-atb:style(margin-right: 2px !important;)
+
+! action bar and search refinement - Added/updated 2020-05-26
+mail.google.com##.nH.aqK:style(height: 36px !important;)
+
+! mail action buttons - Added/updated 2020-05-26
+mail.google.com##.G-tF:style(height: 34px !important;)
+mail.google.com##.PY.G-atb.E.D > .aqK.nH > .aqL.Cq, .bzn:style(display: flex !important;)
+mail.google.com##.bzn:not(.iH) > .G-tF > .G-Ni > .T-I:style(margin-left: 2px !important; margin-right: 2px !important;)
+mail.google.com##.G-Ni.G-aE:not(:first-child):style(margin-right: 1px !important;)
+
+! mail action bar - mail actions (read/delete/etc.) - Added/updated 2020-05-26
+mail.google.com##.Cq.aqL, .bzn .G-Ni:style(height: 34px !important; margin-top: 2px !important;)
+mail.google.com##.bzn .G-Ni:style(margin-left: 0 !important; padding-right: 1px !important;)
+
+! mail action buttons - 3 dot menu button - Added/updated 2020-05-26
+mail.google.com##.asa.bjy:style(width: 8px !important; margin: 0 2px 0 0 !important;)
+
+! mail search with labels search refinement help buttons - Added/updated 2020-05-26
+mail.google.com##.G6[role="toolbar"][aria-label="search refinement"]:style(position: absolute !important; max-width: 30% !important; right: 28% !important; margin: 2px 0px 0px 4px !important;)
+mail.google.com##.Ii, .Im, .Il:style(height: 32px !important;)
+mail.google.com##.HY:style(margin: 0 2px !important;)
+mail.google.com##.HD:style(margin-right: 2px !important;)
+mail.google.com##.HY .H5:style(margin: 6px 1px !important;)
+
+! mail search with labels search refinement help buttons - scroll right button - Added/updated 2020-05-26
+mail.google.com##.Ij.Yn:style(right: -25% !important;)
+
+! mail search with labels  search refinement help buttons - scroll left button - Added/updated 2020-05-26
+mail.google.com##.Ij.Ym:style(left: -10% !important;)
+
+! newer / older mail / settings - Added/updated 2020-05-26
+mail.google.com##.PY.G-atb.E.D > .aqK.nH > .aqJ.Cr:style(height: 34px !important; margin-top: 2px !important;)
+mail.google.com##.Cr.aqJ:style(height: 34px !important; margin-top: 2px !important;)
+
+! settings bar mail scroll through x-y of z - Added/updated 2020-05-26
+mail.google.com##.Di > .amH:style(min-width: 40px !important; padding: 0 4px !important;)
+
+! newer / older mail arrows - Added/updated 2020-05-26
+mail.google.com##.G-atb .aqJ .amD:style(margin-left: 0 !important;)
+
+! setting button - Added/updated 2020-05-26
+mail.google.com##.aqJ .G-Ni:style(margin-left: 0 !important;)
+
+! newer mail arrow - Added/updated 2020-05-26
+mail.google.com###\:hu[data-tooltip="Newer"]:style(margin-left: 4px !important;)
 
 ! End Condensed Gmail Filters
