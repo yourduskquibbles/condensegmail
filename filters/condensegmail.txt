@@ -1,5 +1,5 @@
 ! Expires: 7 Days (Update Frequency)
-! Last Modified: 22:18 2020-05-26
+! Last Modified: 10:01 2020-06-24
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
 ! Discord: https://discord.me/yourduskquibbles
@@ -9,8 +9,6 @@
 ! Works best with uBlock Origin or AdGuard - be sure to install it as well!
 
 ! Start Condensed Gmail Filters
-! Blank space at very top of inbox page - Added 2020-05-02
-mail.google.com##header[id="gb"] > .gb_je
 
 ! gmail header - set padding
 mail.google.com##.gb_Wa:not(.gb_Xa) .gb_Xd:style(padding: 2px !important;)
