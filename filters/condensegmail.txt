@@ -1,5 +1,5 @@
 ! Expires: 7 Days (Update Frequency)
-! Last Modified: 10:05 2020-06-24
+! Last Modified: 10:24 2020-07-06
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
 ! Discord: https://discord.me/yourduskquibbles
@@ -11,7 +11,7 @@
 ! Start Condensed Gmail Filters
 
 ! gmail header - set padding
-mail.google.com##.gb_Wa:not(.gb_Xa) .gb_Xd:style(padding: 2px !important;)
+mail.google.com##.gb_Wa:not(.gb_Xa) .gb_Xd, .gb_sa:not(.gb_ta) .gb_1d:style(padding: 8px !important;)
 
 ! gmail header - logo & hamburger box size
 mail.google.com##[style^="min-width: 248px;"]:style(min-width: 10% !important; max-width: 20% !important; padding-right: 2% !important;)
@@ -69,9 +69,9 @@ mail.google.com##.wT:style(min-width: 1px !important;)
 mail.google.com##.aic:style(height: 44px !important;)
 
 ! gmail left sidebar: compose button 
+mail.google.com##.L3.T-I-KE.J-J5-Ji.T-I, .L3.T-I-KE.T-I:style(height: 36px !important; flex: 1 0 1 !important;)
+mail.google.com##.z0 > .L3:style(font-size: 1.05rem !important; letter-spacing: .2px !important; color: #484954 !important;)
 mail.google.com##.z0:style(height: 20px !important; margin: 12px !important; padding-left: 0 !important;)
-mail.google.com##.L3.T-I-KE.J-J5-Ji.T-I:style(height: 30px !important; flex: 1 0 1 !important;)
-mail.google.com:##.z0 > .L3:style(font-size: 1.05rem !important; letter-spacing: .2px !important; color: #484954 !important;)
 
 ! after clicking hamburger - fix condensed left sidebar icons 
 mail.google.com##.bhZ:not(.bym) .TK .TO, .bhZ:not(.bym) .n6 .ah9, .bhZ:not(.bym) .CL:style(margin-left: 0 !important; width: 48px !important;)
