@@ -1,17 +1,17 @@
 ! Expires: 7 Days (Update Frequency)
-! Last Modified: 09:17 2020-11-25
+! Last Modified: 09:32 2021-01-12
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
 ! Discord: https://discord.me/yourduskquibbles
 ! License: https://creativecommons.org/licenses/by-sa/4.0
-! Copyright: © 2019-2020 by yourduskquibbles
+! Copyright: © 2019-2021 by yourduskquibbles
 ! Purpose: Condense the Display Density of the 2018 Gmail Redesign - Unsuck the web and make it more user friendly!
 ! Works best with uBlock Origin or AdGuard - be sure to install it as well!
 
 ! Start Condensed Gmail Filters
 
-! gmail header - set padding
-mail.google.com##.gb_Wa:not(.gb_Xa) .gb_Xd, .gb_sa:not(.gb_ta) .gb_1d:style(padding: 8px !important;)
+! gmail header - set padding - removed 2021-01-12
+! mail.google.com##.gb_Wa:not(.gb_Xa) .gb_Xd, .gb_sa:not(.gb_ta) .gb_1d:style(padding: 8px !important;)
 
 ! gmail header - logo & hamburger box size
 mail.google.com##[style^="min-width: 248px;"]:style(min-width: 10% !important; max-width: 20% !important; padding-right: 2% !important;)
@@ -27,7 +27,8 @@ mail.google.com##[aria-label^="Main menu"]:style(margin: 0 !important; padding: 
 ! mail.google.com##header > div > div > div:has([id="aso_search_form_anchor"]):style(height: 40px !important;)
 ! mail.google.com##.gb_je.gb_be, .gb_je:style(height: 32px !important;)
 mail.google.com##.aiw .qp:style(margin-bottom: 0 !important;)
-mail.google.com##.gb_Ud:style(height: 36px !important;)
+! removed 2021-01-12
+! mail.google.com##.gb_Ud:style(height: 36px !important;)
 mail.google.com##.gb_sa:not(.gb_ta) .gb_Ud:style(padding: 2px !important;)
 
 ! gmail header empty 18px box under logo/search bar/ user account settings - added 2020-11-25
