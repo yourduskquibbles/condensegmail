@@ -1,5 +1,5 @@
 ! Expires: 7 Days (Update Frequency)
-! Last Modified: 09:32 2021-01-12
+! Last Modified: 10:25 2021-01-18
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
 ! Discord: https://discord.me/yourduskquibbles
@@ -145,8 +145,16 @@ mail.google.com##.Tm .ya:style(margin: 0 !important; padding: 0 !important; min-
 ! gmail - inbox remove hover effect on mail 
 mail.google.com##.zA:hover:style(box-shadow: inset 0 -1px 0 0 rgba(100,121,143,.122) !important;)
 
+! Removed 2021-01-18
 ! gmail - inbox remove hover mailbox toolbar (archive | delete | mark read | snooze)
-mail.google.com##.bqY
+! mail.google.com##.bqY
+
+! Added 2021-01-18
+! gmail - inbox always display the hover (default behavior)  mailbox toolbar (archive | delete | mark read | snooze) icons next to messages in list 
+mail.google.com##.zA > .xY.bq4:style(display: flex !important;)
+mail.google.com##.zA > .xY.byZ:empty, .zA > .xY.byZ:not(:empty) ~ .yf, .zA > .xY.byZ:not(:empty) ~ .xW
+mail.google.com##.bqX:style(margin: 0 2px !important;)
+mail.google.com##.zA > .yf:style(flex-basis: unset !important; max-width: unset !important; padding-right: 0 !important;)
 
 ! gmail - message label size / alignment 
 mail.google.com##.ar.as:style(line-height: 20px !important;)
