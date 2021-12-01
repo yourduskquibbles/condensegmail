@@ -1,5 +1,5 @@
 ! Expires: 7 Days (Update Frequency)
-! Last Modified: 13:40 2021-07-08
+! Last Modified: 14:06 2021-12-01
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
 ! Discord: https://discord.me/yourduskquibbles
@@ -214,7 +214,9 @@ mail.google.com##.gs:style(padding: 0 !important;)
 
 ! gmail message thread - expand message thread dots
 mail.google.com##.ajU:style(padding: 5px 0 !important; margin: 0 !important;)
-mail.google.com##[aria-label^="Show trimmed content"]
+
+! disabled as of 2021-12-01 as this filter prevents secondary emails with duplicate subject/thread that may need to be expanded from being expandable
+! mail.google.com##[aria-label^="Show trimmed content"]
 
 ! gmail message threaded replies - images quoted in expanded reply contained within width of page  - Added 2019-11-06
 mail.google.com##.adL.HOEnZb:style(display: block !important;)
