@@ -1,10 +1,9 @@
 ! Expires: 7 Days (Update Frequency)
-! Last Modified: 14:06 2021-12-01
+! Last Modified: 13:44 2022-01-11
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
-! Discord: https://discord.me/yourduskquibbles
 ! License: https://creativecommons.org/licenses/by-sa/4.0
-! Copyright: © 2019-2021 by yourduskquibbles
+! Copyright: © 2019-2022 by yourduskquibbles
 ! Purpose: Condense the Display Density of the 2018 Gmail Redesign - Unsuck the web and make it more user friendly!
 ! Works best with uBlock Origin or AdGuard - be sure to install it as well!
 
@@ -285,6 +284,13 @@ mail.google.com##.G-Ni.G-aE:not(:first-child):style(margin-right: 1px !important
 
 ! mail action bar - mail actions (read/delete/etc.) - Added/updated 2020-05-26
 mail.google.com##.Cq.aqL, .bzn .G-Ni:style(height: 34px !important; margin-top: 2px !important;)
+
+! mail action bar - message selected widths - Added 2022-01-11
+mail.google.com##.bzn .G-Ni:style(margin-left: -4px !important; padding-right: 10px !important;)
+mail.google.com##.PY.G-atb.E.D > .aqK.nH > .aqL.Cq > .bzn > .G-tF > div.J-J5-Ji.G-aE.G-Ni:nth-of-type(3), div.J-J5-Ji.G-Ni:nth-of-type(4):style(padding-left: 10px !important;)
+
+! mail action bar - envelope icon hover size - Added 2022-01-11
+mail.google.com##.T-I-ax7.T-I-Zf-aw2:style(border: 1px solid transparent !important;)
 
 ! action buttons within an email
 mail.google.com##.iH.bzn:style(height: 34px !important;)
