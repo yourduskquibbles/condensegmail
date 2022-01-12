@@ -1,5 +1,5 @@
 ! Expires: 7 Days (Update Frequency)
-! Last Modified: 13:44 2022-01-11
+! Last Modified: 09:31 2022-01-12
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
 ! License: https://creativecommons.org/licenses/by-sa/4.0
@@ -287,10 +287,14 @@ mail.google.com##.Cq.aqL, .bzn .G-Ni:style(height: 34px !important; margin-top: 
 
 ! mail action bar - message selected widths - Added 2022-01-11
 mail.google.com##.bzn .G-Ni:style(margin-left: -4px !important; padding-right: 10px !important;)
-mail.google.com##.PY.G-atb.E.D > .aqK.nH > .aqL.Cq > .bzn > .G-tF > div.J-J5-Ji.G-aE.G-Ni:nth-of-type(3), div.J-J5-Ji.G-Ni:nth-of-type(4):style(padding-left: 10px !important;)
+! updated 2022-01-12
+mail.google.com##div.J-J5-Ji.G-aE.G-Ni:nth-of-type(3), div.J-J5-Ji.G-Ni:nth-of-type(4):style(padding-left: 10px !important;)
 
 ! mail action bar - envelope icon hover size - Added 2022-01-11
 mail.google.com##.T-I-ax7.T-I-Zf-aw2:style(border: 1px solid transparent !important;)
+
+! mail action bar select all alignment - Added 2022-01-12
+mail.google.com##[data-tooltip="Select"][aria-label="Select"]:style(margin-left: 0 !important;)
 
 ! action buttons within an email
 mail.google.com##.iH.bzn:style(height: 34px !important;)
