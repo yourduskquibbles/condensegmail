@@ -1,5 +1,5 @@
 ! Expires: 7 Days (Update Frequency)
-! Last Modified: 10:16 2022-01-13
+! Last Modified: 13:47 2022-11-10
 ! Title: Condensed Gmail
 ! Homepage: https://github.com/yourduskquibbles/condensegmail
 ! License: https://creativecommons.org/licenses/by-sa/4.0
@@ -8,6 +8,9 @@
 ! Works best with uBlock Origin or AdGuard - be sure to install it as well!
 
 ! Start Condensed Gmail Filters
+
+! gmail left toolbar (mail, chat, spaces, meet) icon padding - added 2022-11-10
+mail.google.com##.CL.V6:style(padding-left: 0 !important; padding-right: 16px !important;)
 
 ! gmail header - set padding - removed 2021-01-12
 ! mail.google.com##.gb_Wa:not(.gb_Xa) .gb_Xd, .gb_sa:not(.gb_ta) .gb_1d:style(padding: 8px !important;)
